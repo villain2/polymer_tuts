@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Elements</title>
+
+    <link href="../bower_components/foundation/css/foundation.css" rel="stylesheet" />
+
+    <script src="../bower_components/webcomponentsjs/webcomponents.min.js"></script>
+
+    <link rel="import" href="../bower_components/core-ajax/core-ajax.html" />
+    <link href="../bower_components/core-icons/core-icons.html" rel="import" />
+    <link rel="import" href="../bower_components/paper-fab/paper-fab.html" />
+    <link rel="import" href="../bower_components/paper-tabs/paper-tabs.html" />
+
+    <style>
+        .pink paper-tab::shadow #ink {
+            color: #ff4081;
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <core-icon icon="info"></core-icon>
+    <paper-fab icon="add"></paper-fab>
+    <paper-fab mini icon="favorite"></paper-fab>
+    <paper-fab src="star.png"></paper-fab>
+
+    <paper-fab icon="cloud" style="color: #ffff00;"></paper-fab>
+
+    <paper-tabs selected="0" class="pink">
+        <paper-tab>TAB 1</paper-tab>
+        <paper-tab>TAB 2</paper-tab>
+        <paper-tab>TAB 3</paper-tab>
+    </paper-tabs>
+
+    <core-ajax url="json/example.json"  handleAs="json"></core-ajax>
+    <script src="js/main.js"></script>
+
+
+</body>
+</html>

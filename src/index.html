@@ -3,8 +3,40 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Polymer Test</title>
+    <link href="../bower_components/foundation/css/foundation.css" rel="stylesheet" />
+    <script src="../bower_components/webcomponentsjs/webcomponents.min.js"></script>
+    <script src="../bower_components/webcomponentsjs/CustomElements.min.js"></script>
+    <script src="../bower_components/core-a11y-keys/core-a11y-keys.html"></script>
+    <script src="../bower_components/core-elements/core-elements.html"></script>
+    <script src="../bower_components/paper-elements/paper-elements.html"></script>
+
+    <!--<link rel="import" href="elements/my-element.html">-->
+    <link rel="import" href="elements/proto-element.html">
 </head>
 <body>
+    <proto-element></proto-element>
 
+    <script src="web-animations.min.js"></script>
+
+
+
+    <div class="pulse" style="width:150px;">Hello world!</div>
+    <script>
+        var elem = document.querySelector('.pulse');
+        var player = elem.animate([
+            {opacity: 0.5, transform: "scale(0.5)"},
+            {opacity: 1.0, transform: "scale(1)"}
+        ], {
+            direction: 'alternate',
+            duration: 500,
+            iterations: Infinity
+        });
+
+        document.body.style.opacity  = 0;
+        window.addEventListener("WebComponentsReady", function ()
+        {
+            document.body.style.opacity = 1;
+        })
+    </script>
 </body>
 </html>
