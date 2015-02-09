@@ -1,0 +1,26 @@
+{
+  "name": "polymer_tuts",
+  "version": "0.0.0",
+  "homepage": "https://github.com/villain2/polymer_tuts",
+  "description": "polymer tuts",
+  "main": "src/index.html",
+  "keywords": [
+    "polymer",
+    "tutorials"
+  ],
+  "authors": [
+    "K.C. Hunter"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.4"
+  }
+}

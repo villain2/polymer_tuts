@@ -1,0 +1,22 @@
+{
+  "name": "polymer_tuts",
+  "version": "0.0.0",
+  "description": "polymer tutorials and such",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/villain2/polymer_tuts.git"
+  },
+  "keywords": [
+    "polymer",
+    "tutorials"
+  ],
+  "author": "K.C. Hunter",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/villain2/polymer_tuts/issues"
+  }
+}
