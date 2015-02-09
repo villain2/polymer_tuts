@@ -1,2 +1,6 @@
 # polymer_tuts
-Polymer tutorials and test dev
+My local test of Polymer and general material design.
+
+
+[Polymer](https://www.polymer-project.org/ "Polymer Website")
+
